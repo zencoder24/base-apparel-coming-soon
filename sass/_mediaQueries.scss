@@ -1,0 +1,109 @@
+@media all and (min-width: 375px) {
+  .portrait{
+    width:100%;
+    height: 250px;
+    background: url("/images/hero-mobile.jpg") no-repeat;
+  }
+  .logo{
+    margin: 28px;
+    height: 21px;
+  }
+  .text-info{
+    h1{
+      text-align: center;
+      margin-top: 68px;
+      font-size: 41px;
+    }
+    p{
+      margin-top: -8px;
+      padding: 0 32px;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+    }
+    form{
+      width: 82%;
+      margin: 30px auto;
+      & input[type="email"]{
+        padding: 0 25px;
+        width: 70%;
+      }
+      button{
+        height: 44px;
+        img{
+          padding: 0 22px;
+        }
+      }
+    }
+  }
+  #errorIcon{
+    padding: 10px;
+  }
+}
+
+@media all and (min-width: 1024px){
+  .container{
+    display: flex;
+  }
+  .logo{
+    order: 1;
+    position: absolute;
+    height: 30px;
+    margin-left: 10%;
+    margin-top: 6%;
+  }
+  .text-info{
+    order: 2;
+    margin-left: 10%;
+    margin-top: 165px;
+    width: 51%;
+    margin-right: 4%;
+    h1{
+      text-align: left;
+      font-size: 59px;
+      margin-bottom: 0;
+    }
+    p{
+      text-align: left;
+      font-size: 16px;
+      margin: 29px 0;
+      padding: 0;
+    }
+    form{
+      margin: 0;
+      & button{
+        height: 50px;
+        border-radius: 43px;
+        & img{
+          padding: 0 33px;
+        }
+      }
+    }
+  }
+  .portrait{
+    background: url("/images/hero-desktop.jpg") no-repeat;
+    order: 3;
+    height: 100vh;
+    width: 80%;
+  }
+
+}
+
+@media all and (min-width: 1440px){
+  .text-info{
+    margin-right: 14%;
+    h1{
+      font-size: 73px;
+    }
+    p{
+      font-size: 17px;
+    }
+  }
+  .portrait{
+    width: 64%;
+  }
+
+  #errorIcon{
+    padding: 13px;
+  }
+}

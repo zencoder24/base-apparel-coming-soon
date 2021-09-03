@@ -1,0 +1,85 @@
+@import "config";
+@import "mediaQueries";
+
+body{
+  font-family: $primaryFont;
+  margin: 0;
+  background-image: url("/images/bg-pattern-desktop.svg");
+}
+
+//Portrait
+.portrait{
+  background-size: cover;
+}
+.text-info{
+  //Header
+  h1{
+    text-transform: uppercase;
+
+    letter-spacing: 8px;
+    color: $neutralColor;
+    span{
+      display: block;
+    }
+    & span:first-child{
+      color: $primaryColor;
+      font-weight: 300;
+    }
+  }
+  //Paragraph
+  p{
+    color:$primaryColor ;
+  }
+  //Email Form
+  form{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid $primaryColor;
+    border-radius: 34px;
+
+    & input[type="email"]{
+      flex-grow: 2;
+      border-radius: 34px;
+      border: none;
+      &:focus{
+        outline: none;
+      }
+      &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $primaryColor;
+        font-family: $primaryFont;
+        opacity: 1; /* Firefox */
+      }
+      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $primaryColor;
+      }
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: $primaryColor;
+      }
+    }
+     button{
+       border-radius: 34px;
+       border: none ;
+       box-shadow: 0 0 5px #ce9797;
+       background-image: $gradientTwo;
+       &:hover{
+         background-image: linear-gradient(135deg, rgb(248, 191, 191), rgb(248, 191, 191));
+       }
+
+    }
+  }
+  }
+
+  #errorMessage{
+    color: red;
+    margin: 8px 20px;
+    font-weight: 300;
+  }
+  #errorIcon{
+    height: 24px;
+  }
+
+
+
+
+
+

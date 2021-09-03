@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+@media all and (min-width: 375px) {
+  .portrait {
+    width: 100%;
+    height: 250px;
+    background: url("/images/hero-mobile.jpg") no-repeat;
+  }
+
+  .logo {
+    margin: 28px;
+    height: 21px;
+  }
+
+  .text-info h1 {
+    text-align: center;
+    margin-top: 68px;
+    font-size: 41px;
+  }
+  .text-info p {
+    margin-top: -8px;
+    padding: 0 32px;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .text-info form {
+    width: 82%;
+    margin: 30px auto;
+  }
+  .text-info form input[type=email] {
+    padding: 0 25px;
+    width: 70%;
+  }
+  .text-info form button {
+    height: 44px;
+  }
+  .text-info form button img {
+    padding: 0 22px;
+  }
+
+  #errorIcon {
+    padding: 10px;
+  }
+}
+@media all and (min-width: 1024px) {
+  .container {
+    display: flex;
+  }
+
+  .logo {
+    order: 1;
+    position: absolute;
+    height: 30px;
+    margin-left: 10%;
+    margin-top: 6%;
+  }
+
+  .text-info {
+    order: 2;
+    margin-left: 10%;
+    margin-top: 165px;
+    width: 51%;
+    margin-right: 4%;
+  }
+  .text-info h1 {
+    text-align: left;
+    font-size: 59px;
+    margin-bottom: 0;
+  }
+  .text-info p {
+    text-align: left;
+    font-size: 16px;
+    margin: 29px 0;
+    padding: 0;
+  }
+  .text-info form {
+    margin: 0;
+  }
+  .text-info form button {
+    height: 50px;
+    border-radius: 43px;
+  }
+  .text-info form button img {
+    padding: 0 33px;
+  }
+
+  .portrait {
+    background: url("/images/hero-desktop.jpg") no-repeat;
+    order: 3;
+    height: 100vh;
+    width: 80%;
+  }
+}
+@media all and (min-width: 1440px) {
+  .text-info {
+    margin-right: 14%;
+  }
+  .text-info h1 {
+    font-size: 73px;
+  }
+  .text-info p {
+    font-size: 17px;
+  }
+
+  .portrait {
+    width: 64%;
+  }
+
+  #errorIcon {
+    padding: 13px;
+  }
+}
+body {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  background-image: url("/images/bg-pattern-desktop.svg");
+}
+
+.portrait {
+  background-size: cover;
+}
+
+.text-info h1 {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  color: #413a3a;
+}
+.text-info h1 span {
+  display: block;
+}
+.text-info h1 span:first-child {
+  color: #ce9797;
+  font-weight: 300;
+}
+.text-info p {
+  color: #ce9797;
+}
+.text-info form {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #ce9797;
+  border-radius: 34px;
+}
+.text-info form input[type=email] {
+  flex-grow: 2;
+  border-radius: 34px;
+  border: none;
+}
+.text-info form input[type=email]:focus {
+  outline: none;
+}
+.text-info form input[type=email]::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ce9797;
+  font-family: "Josefin Sans", sans-serif;
+  opacity: 1;
+  /* Firefox */
+}
+.text-info form input[type=email]:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ce9797;
+}
+.text-info form input[type=email] ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ce9797;
+}
+.text-info form button {
+  border-radius: 34px;
+  border: none;
+  box-shadow: 0 0 5px #ce9797;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+}
+.text-info form button:hover {
+  background-image: linear-gradient(135deg, #f8bfbf, #f8bfbf);
+}
+
+#errorMessage {
+  color: red;
+  margin: 8px 20px;
+  font-weight: 300;
+}
+
+#errorIcon {
+  height: 24px;
+}
+
+/*# sourceMappingURL=style.css.map */
